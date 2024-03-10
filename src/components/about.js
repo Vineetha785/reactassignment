@@ -9,6 +9,7 @@ const AboutPage = () => {
   useEffect(() => {
     const fetchAPOD = async () => {
         const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=fbNyjiNhuC5opvRyd9VvrAHzF9aSHrOouOfXEczs`;
+        // const apiUrl = ` http://localhost:3030/api/nasa/apod`;
   
         try {
           const response = await axios.get(apiUrl);
